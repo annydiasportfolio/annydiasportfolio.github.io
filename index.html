@@ -286,10 +286,11 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
 .swipe-hint{display:none}
 @media (max-width:760px){
   .hero{padding-block:20px 28px}
-  .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);grid-template-areas:"name name" "role photo";gap:18px 16px;align-items:end}
+  .hero-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "photo" "role";gap:16px;align-items:end}
   .hero h1{font-size:clamp(64px,21vw,120px)}
-  .portrait{aspect-ratio:3/4;height:auto;max-height:none;border-radius:999px 999px 0 0}
-  .role.headline{flex-direction:column;gap:9px;font-size:15.5px;line-height:1.25}
+  .portrait{aspect-ratio:6/5;height:auto;max-height:calc(100svh - 330px);min-height:200px;border-radius:999px 999px 0 0}
+  .portrait img{object-position:64% 32%}
+  .role.headline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;font-size:14.5px;line-height:1.25}
   .role.headline span{white-space:normal;display:flex;gap:8px}
   .role.headline span::before{content:"";flex:none;width:10px;height:1px;background:var(--accent);margin-top:.62em}
   .role.headline span:not(:last-child)::after{content:none}

@@ -168,12 +168,11 @@ details[open] > summary .plus::after{opacity:0}
 .job-body{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr);gap:20px;padding:0 0 22px}
 .job-desc{grid-column:2;display:flex;flex-direction:column;gap:18px;min-width:0}
 .job-desc p{margin:0;font-size:17px;line-height:1.6;max-width:68ch}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
-.kpi{padding:16px 16px 4px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
-.kpi + .kpi{padding-left:16px;border-left:1px solid var(--line)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-top:1px solid var(--line);overflow:hidden}
+.kpi{padding:16px 16px 4px;margin-left:-1px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:6px;min-width:0}
 .kpi b{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(36px,3.6vw,52px);line-height:.95;letter-spacing:-.035em;color:var(--accent);font-variant-numeric:lining-nums tabular-nums}
 .kpi span{font-size:13px;line-height:1.35;color:var(--muted)}
-@media (max-width:760px){.job-body{grid-template-columns:1fr}.job-desc{grid-column:1}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:760px){.job-body{grid-template-columns:1fr}.job-desc{grid-column:1}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .roles{list-style:none;margin:0;padding:0 0 26px;display:grid}
 .roles li{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) minmax(0,1fr);gap:20px;padding:14px 0;border-top:1px dashed var(--line);align-items:center}
 .roles .rp{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -300,7 +299,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
         <dl class="facts">
           <div><dt>Experiência</dt><dd>6+ anos em educação</dd></div>
           <div><dt>Empresas</dt><dd>3</dd></div>
-          <div><dt>Liderança</dt><dd>Gerente Geral · CNA+</dd></div>
+          <div><dt>Liderança</dt><dd>Gerente Geral · 2 franquias</dd></div>
           <div><dt>Idiomas</dt><dd>Português · Inglês fluente</dd></div>
           <div><dt>Base</dt><dd>Brasília – DF</dd></div>
         </dl>
@@ -356,8 +355,9 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
         <details class="job" id="job-cna">
           <summary><span class="when">Mai 2023 – Mar 2026</span><span class="co">CNA+</span><span class="jcount">3 cargos</span><span class="plus" aria-hidden="true"></span></summary>
           <div class="job-body"><div class="job-desc">
-            <p>Gerente Geral e Coordenador Comercial bilíngue, com foco em resultados. Defini metas, implementei KPIs e liderei projetos com metodologias ágeis (Scrum e Lean). Conduzi o recrutamento e o treinamento das equipes e o desenvolvimento das diretrizes institucionais. CNA e Ctrl+Play passaram a operar como uma só marca, a CNA+.</p>
+            <p>Assumi a gestão geral e comercial da unidade e <strong>implantei uma segunda franquia</strong>, que também passei a gerir. Defini metas, implementei KPIs e liderei projetos com metodologias ágeis (Scrum e Lean), da contratação e do treinamento das equipes à criação das diretrizes institucionais. O resultado foi uma operação mais eficiente, com clientes mais satisfeitos e mais renovações. CNA e Ctrl+Play passaram a operar como uma só marca, a CNA+.</p>
             <div class="kpis">
+              <div class="kpi"><b>2</b><span>franquias sob minha gestão, uma implantada por mim</span></div>
               <div class="kpi"><b>+30%</b><span>satisfação dos clientes</span></div>
               <div class="kpi"><b>+70%</b><span>média de clientes por período</span></div>
               <div class="kpi"><b>+20%</b><span>renovações contratuais</span></div>
@@ -365,19 +365,23 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
             </div>
           </div></div>
           <ul class="roles">
-            <li><span class="rp">Out 2024 – Mar 2026</span><span class="rt">Gerente Geral<small>Brasília – DF</small></span><span class="tags"><span class="pill">Gestão geral</span><span class="pill">KPIs</span></span></li>
-            <li><span class="rp">Dez 2023 – Mar 2026</span><span class="rt">Coordenador Comercial<small>Brasília – DF</small></span><span class="tags"><span class="pill">Metas</span><span class="pill">Renovações</span></span></li>
-            <li><span class="rp">Mai 2023 – Fev 2025</span><span class="rt">Coordenador Educacional<small>Brasília – DF</small></span><span class="tags"><span class="pill">Pedagógico</span><span class="pill">Treinamento</span></span></li>
+            <li><span class="rp">Out 2024 – Mar 2026</span><span class="rt">Gerente Geral<small>Brasília – DF</small></span><span class="tags"><span class="pill">Gestão de franquias</span><span class="pill">Expansão</span><span class="pill">KPIs</span></span></li>
+            <li><span class="rp">Dez 2023 – Mar 2026</span><span class="rt">Coordenadora Comercial<small>Brasília – DF</small></span><span class="tags"><span class="pill">Metas</span><span class="pill">Renovações</span></span></li>
+            <li><span class="rp">Mai 2023 – Fev 2025</span><span class="rt">Coordenadora Educacional<small>Brasília – DF</small></span><span class="tags"><span class="pill">Pedagógico</span><span class="pill">Treinamento</span></span></li>
           </ul>
         </details>
         <details class="job" id="job-wizard">
           <summary><span class="when">Jan 2020 – Mai 2023</span><span class="co">Wizard by Pearson</span><span class="jcount">2 cargos</span><span class="plus" aria-hidden="true"></span></summary>
           <div class="job-body"><div class="job-desc">
-            <p>Coordenei a área pedagógica de duas unidades escolares: capacitei equipes e criei planos de ação com base em análise de dados. Implementei controles automatizados que trouxeram mais eficiência pedagógica, financeira e administrativa. Como professor bilíngue, dei aulas para várias faixas etárias com metodologia multinível.</p>
+            <p>Como Coordenadora Pedagógica de duas unidades, otimizei processos e capacitei as equipes com planos de ação baseados em dados. Implementei controles automatizados que deram mais eficiência pedagógica, financeira e administrativa e levaram a rematrícula e o reingresso a crescer 70%. Antes, como professora bilíngue, dei aulas para várias faixas etárias com metodologia multinível.</p>
+            <div class="kpis">
+              <div class="kpi"><b>+70%</b><span>rematrícula e reingresso</span></div>
+              <div class="kpi"><b>2</b><span>unidades coordenadas</span></div>
+            </div>
           </div></div>
           <ul class="roles">
-            <li><span class="rp">Ago 2022 – Mai 2023</span><span class="rt">Coordenador Pedagógico<small>2 unidades · Brasília – DF</small></span><span class="tags"><span class="pill">Análise de dados</span><span class="pill">Automação</span></span></li>
-            <li><span class="rp">Jan 2020 – Ago 2022</span><span class="rt">Professor de inglês<small>Brasília – DF</small></span><span class="tags"><span class="pill">Ensino bilíngue</span><span class="pill">Multinível</span></span></li>
+            <li><span class="rp">Ago 2022 – Mai 2023</span><span class="rt">Coordenadora Pedagógica<small>2 unidades · Brasília – DF</small></span><span class="tags"><span class="pill">Processos</span><span class="pill">Rematrícula</span><span class="pill">Automação</span></span></li>
+            <li><span class="rp">Jan 2020 – Ago 2022</span><span class="rt">Professora de inglês<small>Brasília – DF</small></span><span class="tags"><span class="pill">Ensino bilíngue</span><span class="pill">Multinível</span></span></li>
           </ul>
         </details>
       </div>
@@ -444,7 +448,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
   function m(s){var p=s.split('-');return (+p[0])*12+(+p[1]-1);}
   function pct(v){return ((v-start)/span*100)+'%';}
   var axis=document.getElementById('axis');
-  for(var y=2020;y<=2026;y++){var s=document.createElement('span');s.textContent=y;s.style.left=pct(y*12);axis.appendChild(s);}
+  for(var y=2020;y<=2026;y++){var s=document.createElement('span');s.textContent=innerWidth<640?"'"+String(y).slice(2):y;s.style.left=pct(y*12);axis.appendChild(s);}
   document.querySelectorAll('.g-track').forEach(function(t){
     var l=document.createElement('div');l.className='g-lines';
     for(var y=2020;y<=2026;y++){var i=document.createElement('i');i.style.left=pct(y*12);l.appendChild(i);}

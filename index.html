@@ -5,91 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDE2MDAiIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjE2MDAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTG9nbyBBbm55IERpYXMiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxNjAwIiBmaWxsPSIjRkRGNUU3Ii8+PGcgZmlsbD0iIzU5M0EyNiI+PHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzM0IDExMjUpIHNjYWxlKDEgLTEpIiBkPSJNNTU5IDkzVjEwMkw1NDggOTJWNzM2UTU0OCA4MDggNTE4LjAgODQ2LjBRNDg4IDg4NCA0MzIgODg0UTM3MCA4ODQgMzM5LjAgODUzLjBRMzA4IDgyMiAzMDggNzgyVjcwMVEzMDggNjUxIDI3My4wIDYxNy4wUTIzOCA1ODMgMTgyIDU4M1ExNDMgNTgzIDExNy41IDYwNi41UTkyIDYzMCA5MiA2NzhROTIgNzMxIDEzNC4wIDc4MS41UTE3NiA4MzIgMjU4LjUgODY1LjBRMzQxIDg5OCA0NjEgODk4UTYyNSA4OTggNzA2LjUgODI5LjVRNzg4IDc2MSA3ODggNjM1VjExNlE3ODggODEgODAwLjAgNjUuNVE4MTIgNTAgODMwIDUwUTg0OCA1MCA4NjIuMCA2MS4wUTg3NiA3MiA4ODAgOThRODgwIDEwMSA4ODEuNSAxMDIuNVE4ODMgMTA0IDg4NSAxMDRRODg3IDEwNCA4ODguNSAxMDIuNVE4OTAgMTAxIDg5MCA5OFE4OTAgNzkgODcyLjUgNTIuMFE4NTUgMjUgODE2LjAgMy41UTc3NyAtMTggNzEyIC0xOFE2MzIgLTE4IDU5NS41IDEzLjBRNTU5IDQ0IDU1OSA5M1pNNDIgMTk0UTQyIDMwMyAxMzIuMCAzNjkuNVEyMjIgNDM2IDQxOCA0MzZRNDc5IDQzNiA1MTguNSA0MjMuNVE1NTggNDExIDU5MiAzOTNMNTg0IDM4NlE1NTAgNDAyIDUxNS4wIDQxMS4wUTQ4MCA0MjAgNDM2IDQyMFEzNjEgNDIwIDMyMC41IDM3MC4wUTI4MCAzMjAgMjgwIDIyOVEyODAgMTQxIDMxOS4wIDk1LjVRMzU4IDUwIDQyMCA1MFE0NjIgNTAgNTAyLjUgNjkuNVE1NDMgODkgNTcwIDEyNkw1ODEgMTIwUTUzNyA1MyA0NjAuNSAxNy41UTM4NCAtMTggMjk2IC0xOFExODMgLTE4IDExMi41IDQxLjVRNDIgMTAxIDQyIDE5NFoiLz48Y2lyY2xlIGN4PSI4MDAiIGN5PSIxMzAzIiByPSI3MCIvPjwvZz4KPC9zdmc+Cg==">
 <title>Anny Dias · Portfólio</title>
-<meta name="description" content="Portfólio comercial de Anny Dias, Closer de Mentorias na Tutory.">
+<meta name="description" content="Portfólio de Anny Dias, Closer Sênior High Ticket de Vendas Consultivas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter+Tight:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Inter+Tight:wght@400;500;600&display=swap">
 <style>
-/* Layout: editorial 12-col grid, hairline rules between numbered sections, giant serif display, pill tags. */
+/* Layout: editorial 12-col grid, hairline rules between numbered sections, giant serif display, pill tags, duotone photos that reveal color on hover. */
 :root{
   --brown:#593A26; --cream:#FDF5E7; --rose:#A36361;
-  --bg:var(--cream); --fg:var(--brown); --muted:#8A6E5C; --line:rgba(89,58,38,.22);
-  --surface:#F7EBD6; --accent:var(--rose); --on-accent:#FDF5E7;
+  --bg:#FDF5E7; --fg:#593A26; --muted:#8A6E5C; --line:rgba(89,58,38,.22);
+  --surface:#F6E9D3; --accent:#A36361; --on-accent:#FDF5E7; --duo-dark:#593A26; --duo-light:#FDF5E7;
   --display:"Fraunces", "Iowan Old Style", Georgia, serif;
   --text:"Inter Tight", "Helvetica Neue", Arial, system-ui, sans-serif;
-  --gut:max(16px, env(safe-area-inset-left, 0px));
-  --gutr:max(16px, env(safe-area-inset-right, 0px));
+  --pad:clamp(16px,4vw,48px);
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#24170F; --fg:#FDF5E7; --muted:#C2AD98; --line:rgba(253,245,231,.18);
-  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; color-scheme:dark}}
+  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; --duo-dark:#24170F; --duo-light:#E9D6BC; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#24170F; --fg:#FDF5E7; --muted:#C2AD98; --line:rgba(253,245,231,.18);
-  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; color-scheme:dark}
+  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; --duo-dark:#24170F; --duo-light:#E9D6BC; color-scheme:dark}
 
 *{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--text);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1360px;margin:0 auto;padding-left:clamp(16px,4vw,48px);padding-right:clamp(16px,4vw,48px)}
-@supports (padding:max(1px)){.wrap{padding-left:max(clamp(16px,4vw,48px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,48px),env(safe-area-inset-right,0px))}}
+.wrap{max-width:1360px;margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-
 .logo{display:block;color:var(--fg)}
 .logo svg{display:block;width:100%;height:100%}
 
 /* Top bar */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;letter-spacing:-.01em}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{flex:none;text-decoration:none}
 .brand .logo{width:40px;height:40px}
+nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0}
+nav::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;font-size:14px;font-weight:500;padding:7px clamp(8px,1.4vw,12px);border-radius:999px;white-space:nowrap;transition:background-color .2s,color .2s}
+nav a:hover{background:var(--surface)}
+nav a.on{background:var(--fg);color:var(--bg)}
 .tags{display:flex;gap:8px;flex-wrap:wrap}
+.top .tags{flex:none}
 .pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--fg);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:500;line-height:1.2;white-space:nowrap}
 .pill.fill{background:var(--fg);color:var(--bg)}
 .pill.rose{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.pill.soft{border-color:var(--line)}
 .pill .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+@media (max-width:900px){.top .tags{display:none}}
 
 /* Hero */
-.hero{padding-block:clamp(40px,8vw,104px) clamp(36px,6vw,72px);border-bottom:1px solid var(--line)}
-.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:500}
-.hero h1{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(76px,17.5vw,272px);line-height:.86;letter-spacing:-.045em;margin:0;text-wrap:balance}
+.hero{padding-block:clamp(36px,7vw,96px) clamp(36px,6vw,72px);border-bottom:1px solid var(--line)}
+.hero h1{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(76px,17.5vw,272px);line-height:.86;letter-spacing:-.045em;margin:0}
 .hero h1 em{font-style:italic;font-weight:300}
 .hero h1 .ink{color:var(--accent);margin-left:.07em}
 .hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:clamp(28px,4vw,56px);align-items:end}
-.role{grid-column:1 / span 5;font-family:var(--display);font-size:clamp(22px,2.4vw,32px);line-height:1.15;letter-spacing:-.01em;margin:0}
-.lede{grid-column:7 / span 6;font-size:clamp(17px,1.5vw,20px);line-height:1.55;margin:0;max-width:56ch}
+.hero-copy{grid-column:1 / span 7;display:flex;flex-direction:column;gap:22px;min-width:0}
+.role{font-family:var(--display);font-size:clamp(24px,2.8vw,38px);line-height:1.12;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.lede{font-size:clamp(17px,1.5vw,20px);line-height:1.55;margin:0;max-width:52ch}
 .lede strong{font-weight:600}
-@media (max-width:760px){.role,.lede{grid-column:1 / -1}}
+.portrait{grid-column:9 / span 4;position:relative;margin:0;aspect-ratio:4/5;max-width:100%;border-radius:999px 999px 0 0;overflow:hidden;background:var(--surface)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;filter:sepia(.28) saturate(.85) contrast(1.02)}
+.portrait .ph{position:absolute;inset:0;display:none;place-items:center}
+.portrait .ph .logo{width:46%;aspect-ratio:1}
+.portrait.empty img{display:none}
+.portrait.empty .ph{display:grid}
+.portrait figcaption{position:absolute;left:14px;bottom:14px}
+.portrait figcaption .pill{background:var(--bg);border-color:var(--bg);color:var(--fg)}
+@media (max-width:860px){.hero-copy{grid-column:1 / -1}.portrait{grid-column:1 / -1;max-width:420px;width:100%;order:-1}}
 
 /* Sections */
-.sec{border-bottom:1px solid var(--line);padding-block:clamp(40px,6vw,80px)}
-.sec-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:baseline;margin-bottom:clamp(28px,4vw,48px)}
+.sec{border-bottom:1px solid var(--line);padding-block:clamp(44px,6vw,88px)}
+.sec-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:baseline;margin-bottom:clamp(28px,4vw,52px)}
 .num{grid-column:span 2;font-family:var(--display);font-size:clamp(18px,1.6vw,22px);color:var(--accent)}
 .sec-head h2{grid-column:span 10;font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.035em;margin:0}
 @media (max-width:760px){.num,.sec-head h2{grid-column:1 / -1}.sec-head{gap:8px}}
 
-.period{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-top:1px solid var(--fg);padding-top:14px}
+/* Results */
+.period{border-top:1px solid var(--fg);padding-top:14px}
 .period h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;margin:0}
-.period span{color:var(--muted);font-size:14px}
-
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:20px;border-top:1px solid var(--line)}
-.stat{padding:28px 24px 30px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0;transition:background-color .3s ease}
+.stat{padding:28px 24px 30px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0}
 .stat + .stat{padding-left:24px}
 .stat:last-child{border-right:0}
-.stat .label{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;display:flex;justify-content:space-between;gap:8px}
-.stat .label i{font-style:normal;color:var(--accent)}
-.stat .value{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(56px,6.6vw,104px);line-height:.9;letter-spacing:-.045em;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.stat .label{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500}
+.stat .value{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(56px,6.6vw,104px);line-height:.9;letter-spacing:-.045em;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap;transition:color .3s ease}
 .stat .value small{font-size:.38em;letter-spacing:-.01em;vertical-align:.95em;margin-right:.08em}
 .stat .value .u{font-size:.42em;letter-spacing:-.01em;margin-left:.08em}
-.stat .desc{font-size:15px;line-height:1.45;margin:0;max-width:28ch}
-.stat .note{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.stat .note b{font-weight:600;color:var(--fg);font-variant-numeric:tabular-nums}
 @media (hover:hover){.stat:hover .value{color:var(--accent)}}
-.stat .value{transition:color .3s ease}
 @media (max-width:1000px){
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .stat{padding:24px 16px 26px 0}
-  .stat + .stat{padding-left:0}
+  .stat{padding:24px 16px 26px 0}.stat + .stat{padding-left:0}
   .stat:nth-child(2n){padding-left:20px;border-right:0}
   .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
 }
@@ -99,52 +107,104 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   .stat:last-child{border-bottom:0}
 }
 
-/* Experience table */
-.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{width:100%;border-collapse:collapse;min-width:640px}
-th{text-align:left;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;padding:0 16px 14px 0;border-bottom:1px solid var(--fg)}
-td{padding:26px 16px 26px 0;border-bottom:1px solid var(--line);vertical-align:middle}
-td.p{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--muted);font-size:15px;width:18%}
-td.c{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);letter-spacing:-.015em;line-height:1.15;width:34%}
-td.e{font-size:17px;font-weight:500;width:18%}
-td.a .tags{gap:6px}
-tbody tr{transition:background-color .25s ease}
-@media (hover:hover){tbody tr:hover{background:var(--surface)}}
-tr.blank td{color:var(--muted)}
-tr.blank td.c{color:var(--line)}
-.c .cell{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+/* About */
+.about{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.about .quote{grid-column:1 / span 7;font-family:var(--display);font-weight:350;font-size:clamp(24px,2.6vw,36px);line-height:1.22;letter-spacing:-.015em;margin:0;text-wrap:pretty}
+.about .quote em{color:var(--accent);font-style:italic}
+.facts{grid-column:9 / span 4;margin:0;display:grid;align-content:start;border-top:1px solid var(--fg)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500}
+.facts dd{margin:0;font-weight:500;text-align:right}
+@media (max-width:860px){.about .quote,.facts{grid-column:1 / -1}}
 
-/* Mobile cards for table */
-@media (max-width:640px){
-  table{min-width:0}
-  thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-  tbody tr{display:grid;grid-template-columns:1fr;gap:6px;padding:20px 0;border-bottom:1px solid var(--line)}
-  td{display:block;border:0;padding:0;width:auto!important}
-  td.p{font-size:14px}
-  td.a{padding-top:6px}
-  tr.blank td:not(.p){display:none}
+.pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:clamp(40px,5vw,72px)}
+.pillar{display:flex;flex-direction:column;gap:14px;min-width:0;cursor:default}
+.duo{position:relative;margin:0;aspect-ratio:3/4;max-width:100%;overflow:hidden;background:var(--duo-dark);border-radius:4px}
+.duo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.1) brightness(1.05);mix-blend-mode:screen;transition:filter .6s ease,transform .8s cubic-bezier(.2,.7,.1,1)}
+.duo::after{content:"";position:absolute;inset:0;background:var(--duo-light);mix-blend-mode:multiply;transition:opacity .6s ease;pointer-events:none}
+.duo .n{position:absolute;top:12px;left:12px;z-index:1;font-family:var(--display);font-size:15px;color:var(--cream);background:var(--brown);border-radius:999px;padding:3px 10px}
+.pillar:hover .duo img,.pillar:focus-visible .duo img,.pillar.lit .duo img{filter:none;mix-blend-mode:normal;transform:scale(1.04)}
+.pillar:hover .duo::after,.pillar:focus-visible .duo::after,.pillar.lit .duo::after{opacity:0}
+.pillar h3{font-family:var(--display);font-weight:400;font-size:clamp(22px,2vw,28px);line-height:1.1;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.pillar p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
+@media (max-width:1000px){.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.pillars{grid-template-columns:1fr}.duo{aspect-ratio:4/3}}
+
+/* Timeline */
+.gantt{border-top:1px solid var(--fg);padding-top:20px}
+.g-axis,.g-row{display:grid;grid-template-columns:minmax(88px,150px) minmax(0,1fr);gap:16px;align-items:center}
+.g-track{position:relative;height:34px}
+.g-axis .g-track{height:22px}
+.g-axis .g-track span{position:absolute;top:0;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;padding-left:4px}
+.g-lines{position:absolute;inset:0;pointer-events:none}
+.g-lines i{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.g-row{padding-block:6px}
+.g-row .who{font-weight:500;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{position:absolute;top:5px;height:24px;border-radius:999px;background:var(--surface);border:1px solid var(--fg);cursor:pointer;padding:0;font:inherit;color:inherit;transition:background-color .25s,border-color .25s}
+.bar:hover,.bar.on{background:var(--fg)}
+.bar.now{background:var(--accent);border-color:var(--accent)}
+.bar.now:hover,.bar.now.on{background:var(--fg);border-color:var(--fg)}
+.bar .len{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:11px;font-weight:600;white-space:nowrap;color:var(--fg)}
+.bar.now .len{right:auto;left:calc(100% + 8px);color:var(--accent)}
+.bar:hover .len,.bar.on .len{color:var(--bg)}
+.bar.now:hover .len,.bar.now.on .len{color:var(--fg)}
+.g-hint{font-size:13px;color:var(--muted);margin:14px 0 0}
+@media (max-width:520px){.bar .len{display:none}}
+
+.jobs{margin-top:clamp(28px,4vw,48px);border-top:1px solid var(--fg)}
+.job{border-bottom:1px solid var(--line);transition:background-color .3s}
+.job summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) auto auto;gap:20px;align-items:center;padding:22px 0}
+.job summary::-webkit-details-marker{display:none}
+.job .when{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.job .co{font-family:var(--display);font-size:clamp(26px,3vw,42px);line-height:1.05;letter-spacing:-.02em;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.job .count{font-size:13px;color:var(--muted);white-space:nowrap}
+.plus{flex:none;width:36px;height:36px;border:1px solid var(--fg);border-radius:50%;position:relative;transition:transform .35s ease}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--fg);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .25s}
+details[open] > summary .plus{transform:rotate(180deg)}
+details[open] > summary .plus::after{opacity:0}
+.job.flash{animation:flash 1.4s ease}
+@keyframes flash{0%,40%{background:var(--surface)}100%{background:transparent}}
+.roles{list-style:none;margin:0;padding:0 0 26px;display:grid}
+.roles li{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) minmax(0,1fr);gap:20px;padding:14px 0;border-top:1px dashed var(--line);align-items:center}
+.roles .rp{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.roles .rt{font-size:18px;font-weight:500}
+.roles .rt small{display:block;font-size:13px;font-weight:400;color:var(--muted)}
+.roles .tags{gap:6px}
+@media (max-width:760px){
+  .job summary{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}
+  .job .when{grid-column:1 / -1}
+  .job .count{display:none}
+  .roles li{grid-template-columns:1fr;gap:6px}
 }
 
-/* Footer */
-footer{padding-block:clamp(40px,6vw,72px) clamp(28px,4vw,40px)}
-.foot{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
-.foot .logo{grid-column:1 / -1;width:clamp(72px,9vw,112px);aspect-ratio:1;max-width:100%}
-details{grid-column:4 / span 9;border-top:1px solid var(--fg);border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-size:clamp(22px,2.4vw,30px);letter-spacing:-.015em}
-summary::-webkit-details-marker{display:none}
-.plus{flex:none;width:36px;height:36px;border:1px solid var(--fg);border-radius:50%;position:relative;transition:transform .35s ease,background-color .25s ease}
-.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--fg);transform:translate(-50%,-50%)}
-.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .25s ease}
-details[open] .plus{transform:rotate(180deg)}
-details[open] .plus::after{opacity:0}
-.method{list-style:none;margin:0;padding:0 0 22px;display:grid;gap:0}
-.method li{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.5}
-.method li span:first-child{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;padding-top:3px}
-.method li span:last-child{max-width:62ch}
-@media (max-width:760px){.foot .logo,details{grid-column:1 / -1}.method li{grid-template-columns:1fr;gap:4px}}
-.colophon{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:clamp(36px,5vw,56px);font-size:13px;color:var(--muted)}
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.edu h3{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;margin:0;padding-bottom:12px;border-bottom:1px solid var(--fg)}
+.edu ul{list-style:none;margin:0;padding:0}
+.edu li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.edu .t{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);line-height:1.15;letter-spacing:-.015em}
+.edu .s{display:block;font-family:var(--text);font-size:14px;color:var(--muted);letter-spacing:0;margin-top:4px}
+.edu .y{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.skills{margin-top:clamp(36px,5vw,56px)}
+.skills .tags{gap:10px}
+.skills .pill{font-size:15px;padding:8px 16px;white-space:normal}
+@media (max-width:760px){.edu{grid-template-columns:1fr}}
 
-/* Entrance */
+/* Footer */
+footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
+.cta{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
+.cta .logo{grid-column:span 2;width:clamp(72px,9vw,120px);aspect-ratio:1;max-width:100%}
+.cta-copy{grid-column:4 / span 9;display:flex;flex-direction:column;gap:20px;min-width:0}
+.cta-copy p{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.035em;margin:0}
+.cta-copy p em{font-style:italic;font-weight:300;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;max-width:100%;background:var(--fg);color:var(--bg);text-decoration:none;border-radius:999px;padding:14px 22px;font-weight:500;transition:background-color .2s}
+.btn:hover{background:var(--accent)}
+.btn span{transition:transform .25s}
+.btn:hover span{transform:translateX(4px)}
+@media (max-width:760px){.cta .logo,.cta-copy{grid-column:1 / -1}}
+.colophon{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:clamp(40px,5vw,64px);padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
 @media (prefers-reduced-motion:no-preference){
   .hero h1 .w{display:inline-block;animation:rise .9s cubic-bezier(.2,.7,.1,1) both}
   .hero h1 .w:nth-child(2){animation-delay:.08s}
@@ -154,11 +214,19 @@ details[open] .plus::after{opacity:0}
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="mark" fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></defs></svg>
+
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Anny Dias, voltar ao início">
-      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><g fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></svg></span>
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><use href="#mark"/></svg></span>
     </a>
+    <nav aria-label="Seções">
+      <a href="#resultados">Resultados</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#formacao">Formação</a>
+    </nav>
     <div class="tags">
       <span class="pill">Portfólio 2026</span>
       <span class="pill fill">Closer Sênior High Ticket</span>
@@ -171,79 +239,169 @@ details[open] .plus::after{opacity:0}
     <div class="wrap">
       <h1><span class="w">Anny</span> <span class="w"><em>Dias</em><span class="ink">.</span></span></h1>
       <div class="hero-grid">
-        <p class="role">Closer Sênior High Ticket<br>de Vendas Consultivas</p>
-        <p class="lede">De abril a novembro de 2026, fechei <strong>71 vendas</strong> e <strong>R$&nbsp;446 mil</strong> em pagamentos recebidos. Os mentores que coloquei na plataforma já somam mais de <strong>1.100 alunos</strong>.</p>
+        <div class="hero-copy">
+          <p class="role">Closer Sênior High Ticket de Vendas Consultivas</p>
+          <p class="lede">De abril a novembro de 2026, fechei <strong>71 vendas</strong> e <strong>R$&nbsp;446 mil</strong> em pagamentos recebidos. Os mentores que coloquei na plataforma já somam mais de <strong>1.100 alunos</strong>.</p>
+          <div class="tags">
+            <span class="pill soft">PSM II · Scrum.org</span>
+            <span class="pill soft">Lean Six Sigma Green Belt</span>
+            <span class="pill soft">Bilíngue PT · EN</span>
+            <span class="pill soft">Brasília – DF</span>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="img/anny.jpg" alt="Retrato de Anny Dias" onerror="this.parentNode.classList.add('empty')">
+          <div class="ph" aria-hidden="true"><span class="logo"><svg viewBox="0 0 1600 1600"><use href="#mark"/></svg></span></div>
+          <figcaption><span class="pill"><span class="dot"></span>Tutory · desde abr 2026</span></figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <section class="sec" id="resultados" aria-labelledby="t-resultados">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="num">01</span>
-        <h2 id="t-resultados">Resultados</h2>
-      </div>
-
-      <div class="period">
-        <h3>Abril – Novembro 2026</h3>
-      </div>
-
+      <div class="sec-head"><span class="num">01</span><h2 id="t-resultados">Resultados</h2></div>
+      <div class="period"><h3>Abril – Novembro 2026</h3></div>
       <div class="stats">
         <article class="stat">
           <div class="label">Faturamento recebido</div>
-          <div class="value"><small>R$</small>446<span class="u">mil</span></div>
+          <div class="value"><small>R$</small><span class="count" data-to="446">446</span><span class="u">mil</span></div>
         </article>
         <article class="stat">
           <div class="label">Vendas fechadas</div>
-          <div class="value">71</div>
+          <div class="value"><span class="count" data-to="71">71</span></div>
         </article>
         <article class="stat">
           <div class="label">Alunos na plataforma</div>
-          <div class="value">+1.100</div>
+          <div class="value">+<span class="count" data-to="1100">1.100</span></div>
         </article>
         <article class="stat">
           <div class="label">Mentores com até</div>
-          <div class="value">361<span class="u">alunos</span></div>
+          <div class="value"><span class="count" data-to="361">361</span><span class="u">alunos</span></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="experiencia" aria-labelledby="t-experiencia">
+  <section class="sec" id="sobre" aria-labelledby="t-sobre">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="num">02</span>
-        <h2 id="t-experiencia">Experiência</h2>
+      <div class="sec-head"><span class="num">02</span><h2 id="t-sobre">Sobre</h2></div>
+      <div class="about">
+        <p class="quote">Na Tutory, atuo na linha de frente do maior ecossistema educacional do Brasil, <em>transformando o conhecimento de especialistas em negócios de escala</em>. Trago a experiência de gestão geral e comercial em grandes unidades de ensino, como o CNA.</p>
+        <dl class="facts">
+          <div><dt>Experiência</dt><dd>6+ anos em educação</dd></div>
+          <div><dt>Empresas</dt><dd>4</dd></div>
+          <div><dt>Liderança</dt><dd>Gerente Geral, 2 unidades</dd></div>
+          <div><dt>Idiomas</dt><dd>Português · Inglês</dd></div>
+          <div><dt>Base</dt><dd>Brasília – DF</dd></div>
+        </dl>
       </div>
 
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr><th scope="col">Período</th><th scope="col">Cargo</th><th scope="col">Empresa</th><th scope="col">Áreas</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="p">Abr 2026 – atual</td>
-              <td class="c"><div class="cell">Closer de Mentorias <span class="pill rose"><span class="dot"></span>Atual</span></div></td>
-              <td class="e">Tutory</td>
-              <td class="a"><div class="tags"><span class="pill">Vendas</span><span class="pill">Mentorias</span></div></td>
-            </tr>
-            <!-- EXPERIÊNCIA ANTERIOR 1: troque os "—" pelo período, cargo, empresa e áreas. Para cada área, use <span class="pill">Área</span>. Depois remova class="blank". -->
-            <tr class="blank">
-              <td class="p">—</td>
-              <td class="c">—</td>
-              <td class="e">—</td>
-              <td class="a">—</td>
-            </tr>
-            <!-- EXPERIÊNCIA ANTERIOR 2 -->
-            <tr class="blank">
-              <td class="p">—</td>
-              <td class="c">—</td>
-              <td class="e">—</td>
-              <td class="a">—</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="pillars">
+        <article class="pillar" tabindex="0">
+          <figure class="duo"><span class="n">01</span><img src="img/vendas.jpg" alt="Duas pessoas conversando em uma mesa com notebook" loading="lazy"></figure>
+          <h3>Vendas consultivas high ticket</h3>
+          <p>Fechamento de mentorias de alto valor, da sessão estratégica ao contrato.</p>
+        </article>
+        <article class="pillar" tabindex="0">
+          <figure class="duo"><span class="n">02</span><img src="img/pessoas.jpg" alt="Três mulheres sorrindo em reunião de trabalho" loading="lazy"></figure>
+          <h3>Gestão de pessoas e equipes</h3>
+          <p>Liderança de times comerciais e pedagógicos de alta performance.</p>
+        </article>
+        <article class="pillar" tabindex="0">
+          <figure class="duo"><span class="n">03</span><img src="img/agil.jpg" alt="Equipe planejando com post-its em um quadro" loading="lazy"></figure>
+          <h3>Gestão ágil e melhoria contínua</h3>
+          <p>Scrum (PSM II) e Lean Six Sigma Green Belt aplicados a processos, entregas e KPIs.</p>
+        </article>
+        <article class="pillar" tabindex="0">
+          <figure class="duo"><span class="n">04</span><img src="img/educacao.jpg" alt="Mão escolhendo um livro em uma estante" loading="lazy"></figure>
+          <h3>Educação bilíngue e sucesso do cliente</h3>
+          <p>Da sala de aula à coordenação, com a experiência do aluno e do mentor no centro.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="trajetoria" aria-labelledby="t-trajetoria">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">03</span><h2 id="t-trajetoria">Trajetória</h2></div>
+
+      <div class="gantt" role="group" aria-label="Linha do tempo de 2020 a 2026">
+        <div class="g-axis"><span></span><div class="g-track" id="axis"></div></div>
+        <div class="g-row"><span class="who">Tutory</span><div class="g-track"><button class="bar now" data-job="job-tutory" data-from="2026-04" data-to="2026-11" aria-label="Tutory, abril de 2026 até hoje"><span class="len">8m</span></button></div></div>
+        <div class="g-row"><span class="who">CNA+</span><div class="g-track"><button class="bar" data-job="job-cna" data-from="2023-05" data-to="2026-03" aria-label="CNA+, maio de 2023 a março de 2026"><span class="len">2a 11m</span></button></div></div>
+        <div class="g-row"><span class="who">Ctrl+Play</span><div class="g-track"><button class="bar" data-job="job-ctrl" data-from="2024-05" data-to="2026-03" aria-label="Ctrl+Play, maio de 2024 a março de 2026"><span class="len">1a 11m</span></button></div></div>
+        <div class="g-row"><span class="who">Wizard by Pearson</span><div class="g-track"><button class="bar" data-job="job-wizard" data-from="2020-01" data-to="2023-05" aria-label="Wizard by Pearson, janeiro de 2020 a maio de 2023"><span class="len">3a 5m</span></button></div></div>
+        <p class="g-hint">Clique em uma barra para ver os cargos.</p>
+      </div>
+
+      <div class="jobs">
+        <details class="job" id="job-tutory" open>
+          <summary><span class="when">Abr 2026 – atual</span><span class="co">Tutory <span class="pill rose"><span class="dot"></span>Atual</span></span><span class="count">1 cargo</span><span class="plus" aria-hidden="true"></span></summary>
+          <ul class="roles">
+            <li><span class="rp">Abr 2026 – atual</span><span class="rt">Closer e Head de Mentorias Sênior</span><span class="tags"><span class="pill">Vendas high ticket</span><span class="pill">Mentorias</span></span></li>
+          </ul>
+        </details>
+        <details class="job" id="job-cna">
+          <summary><span class="when">Mai 2023 – Mar 2026</span><span class="co">CNA+</span><span class="count">3 cargos</span><span class="plus" aria-hidden="true"></span></summary>
+          <ul class="roles">
+            <li><span class="rp">Out 2024 – Mar 2026</span><span class="rt">Gerente Geral<small>Brasília – DF</small></span><span class="tags"><span class="pill">Gestão geral</span><span class="pill">Pessoas</span></span></li>
+            <li><span class="rp">Dez 2023 – Mar 2026</span><span class="rt">Coordenador comercial<small>Brasília – DF</small></span><span class="tags"><span class="pill">Vendas</span><span class="pill">Comercial</span></span></li>
+            <li><span class="rp">Mai 2023 – Out 2024</span><span class="rt">Coordenador educacional<small>Brasília – DF</small></span><span class="tags"><span class="pill">Pedagógico</span><span class="pill">Professores</span></span></li>
+          </ul>
+        </details>
+        <details class="job" id="job-ctrl">
+          <summary><span class="when">Mai 2024 – Mar 2026</span><span class="co">Ctrl+Play</span><span class="count">3 cargos</span><span class="plus" aria-hidden="true"></span></summary>
+          <ul class="roles">
+            <li><span class="rp">Out 2024 – Mar 2026</span><span class="rt">Gerente Geral<small>Brasília – DF</small></span><span class="tags"><span class="pill">Gestão geral</span><span class="pill">Pessoas</span></span></li>
+            <li><span class="rp">Mai 2024 – Mar 2026</span><span class="rt">Coordenador comercial<small>Brasília – DF</small></span><span class="tags"><span class="pill">Vendas</span><span class="pill">Comercial</span></span></li>
+            <li><span class="rp">Mai 2024 – Fev 2025</span><span class="rt">Coordenador educacional<small>Brasília – DF</small></span><span class="tags"><span class="pill">Pedagógico</span><span class="pill">Professores</span></span></li>
+          </ul>
+        </details>
+        <details class="job" id="job-wizard">
+          <summary><span class="when">Jan 2020 – Mai 2023</span><span class="co">Wizard by Pearson</span><span class="count">2 cargos</span><span class="plus" aria-hidden="true"></span></summary>
+          <ul class="roles">
+            <li><span class="rp">Ago 2022 – Mai 2023</span><span class="rt">Coordenador educacional<small>Brasília – DF</small></span><span class="tags"><span class="pill">Pedagógico</span><span class="pill">Professores</span></span></li>
+            <li><span class="rp">Jan 2020 – Ago 2022</span><span class="rt">Professor de inglês<small>Brasília – DF</small></span><span class="tags"><span class="pill">Ensino de inglês</span><span class="pill">Sala de aula</span></span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="formacao" aria-labelledby="t-formacao">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">04</span><h2 id="t-formacao">Formação</h2></div>
+      <div class="edu">
+        <div>
+          <h3>Certificações</h3>
+          <ul>
+            <li><span class="t">Professional Scrum Master II<span class="s">PSM II · Scrum.org</span></span><span class="y"></span></li>
+            <li><span class="t">Lean Six Sigma Green Belt<span class="s">Melhoria contínua</span></span><span class="y"></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Graduação</h3>
+          <ul>
+            <li><span class="t">Pedagogia<span class="s">Licenciatura · UniCEUB</span></span><span class="y">2022 – 2026</span></li>
+            <li><span class="t">Análise e Desenvolvimento de Sistemas<span class="s">Tecnólogo · UniCEUB</span></span><span class="y">2021</span></li>
+            <li><span class="t">Biomedicina<span class="s">Bacharelado · IESB</span></span><span class="y">2019 – 2020</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="tags">
+          <span class="pill fill">Vendas consultivas</span>
+          <span class="pill fill">High ticket</span>
+          <span class="pill">Gestão de pessoas e projetos</span>
+          <span class="pill">Customer Experience &amp; Success</span>
+          <span class="pill">Análise de KPIs</span>
+          <span class="pill">Scrum</span>
+          <span class="pill">Lean Six Sigma</span>
+          <span class="pill">Formação de professores</span>
+          <span class="pill">Ensino de idiomas</span>
+          <span class="pill">Inglês (ESL)</span>
+        </div>
       </div>
     </div>
   </section>
@@ -251,14 +409,70 @@ details[open] .plus::after{opacity:0}
 
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><g fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></svg></span>
+    <div class="cta">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><use href="#mark"/></svg></span>
+      <div class="cta-copy">
+        <p>Vamos <em>conversar?</em></p>
+        <a class="btn" href="https://www.linkedin.com/in/annysealey/" target="_blank" rel="noopener">linkedin.com/in/annysealey <span aria-hidden="true">→</span></a>
+      </div>
     </div>
     <div class="colophon">
       <span>Anny Dias · Closer Sênior High Ticket de Vendas Consultivas</span>
-      <span>Portfólio 2026</span>
+      <span>Fotos ilustrativas: Unsplash</span>
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var start=2020*12, end=2027*12, span=end-start;
+  function m(s){var p=s.split('-');return (+p[0])*12+(+p[1]-1);}
+  function pct(v){return ((v-start)/span*100)+'%';}
+  var axis=document.getElementById('axis');
+  for(var y=2020;y<=2026;y++){var s=document.createElement('span');s.textContent=y;s.style.left=pct(y*12);axis.appendChild(s);}
+  document.querySelectorAll('.g-track').forEach(function(t){
+    var l=document.createElement('div');l.className='g-lines';
+    for(var y=2020;y<=2026;y++){var i=document.createElement('i');i.style.left=pct(y*12);l.appendChild(i);}
+    t.prepend(l);
+  });
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.bar').forEach(function(b){
+    var a=m(b.dataset.from), z=m(b.dataset.to)+1;
+    b.style.left=pct(a); b.style.width=((z-a)/span*100)+'%';
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.bar').forEach(function(x){x.classList.toggle('on',x===b);});
+      var d=document.getElementById(b.dataset.job); if(!d)return;
+      d.open=true; d.classList.remove('flash'); void d.offsetWidth; d.classList.add('flash');
+      d.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+    });
+  });
+
+  document.querySelectorAll('.pillar').forEach(function(p){
+    p.addEventListener('click',function(){ if(!matchMedia('(hover:hover)').matches) p.classList.toggle('lit'); });
+  });
+
+  var fmt=new Intl.NumberFormat('pt-BR');
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return; io.unobserve(e.target);
+        var el=e.target, to=+el.dataset.to, t0=null, dur=1300;
+        function step(ts){ if(!t0)t0=ts; var k=Math.min(1,(ts-t0)/dur), v=Math.round(to*(1-Math.pow(1-k,3)));
+          el.textContent=fmt.format(v); if(k<1)requestAnimationFrame(step); }
+        requestAnimationFrame(step);
+      });
+    },{threshold:.6});
+    document.querySelectorAll('.count').forEach(function(c){ if(c.getBoundingClientRect().top>innerHeight) io.observe(c); });
+  }
+
+  var links=[].slice.call(document.querySelectorAll('nav a'));
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);}); } });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s);});
+  }
+})();
+</script>
 </body>
 </html>

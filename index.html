@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDE2MDAiIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjE2MDAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTG9nbyBBbm55IERpYXMiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxNjAwIiBmaWxsPSIjRkRGNUU3Ii8+PGcgZmlsbD0iIzU5M0EyNiI+PHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzM0IDExMjUpIHNjYWxlKDEgLTEpIiBkPSJNNTU5IDkzVjEwMkw1NDggOTJWNzM2UTU0OCA4MDggNTE4LjAgODQ2LjBRNDg4IDg4NCA0MzIgODg0UTM3MCA4ODQgMzM5LjAgODUzLjBRMzA4IDgyMiAzMDggNzgyVjcwMVEzMDggNjUxIDI3My4wIDYxNy4wUTIzOCA1ODMgMTgyIDU4M1ExNDMgNTgzIDExNy41IDYwNi41UTkyIDYzMCA5MiA2NzhROTIgNzMxIDEzNC4wIDc4MS41UTE3NiA4MzIgMjU4LjUgODY1LjBRMzQxIDg5OCA0NjEgODk4UTYyNSA4OTggNzA2LjUgODI5LjVRNzg4IDc2MSA3ODggNjM1VjExNlE3ODggODEgODAwLjAgNjUuNVE4MTIgNTAgODMwIDUwUTg0OCA1MCA4NjIuMCA2MS4wUTg3NiA3MiA4ODAgOThRODgwIDEwMSA4ODEuNSAxMDIuNVE4ODMgMTA0IDg4NSAxMDRRODg3IDEwNCA4ODguNSAxMDIuNVE4OTAgMTAxIDg5MCA5OFE4OTAgNzkgODcyLjUgNTIuMFE4NTUgMjUgODE2LjAgMy41UTc3NyAtMTggNzEyIC0xOFE2MzIgLTE4IDU5NS41IDEzLjBRNTU5IDQ0IDU1OSA5M1pNNDIgMTk0UTQyIDMwMyAxMzIuMCAzNjkuNVEyMjIgNDM2IDQxOCA0MzZRNDc5IDQzNiA1MTguNSA0MjMuNVE1NTggNDExIDU5MiAzOTNMNTg0IDM4NlE1NTAgNDAyIDUxNS4wIDQxMS4wUTQ4MCA0MjAgNDM2IDQyMFEzNjEgNDIwIDMyMC41IDM3MC4wUTI4MCAzMjAgMjgwIDIyOVEyODAgMTQxIDMxOS4wIDk1LjVRMzU4IDUwIDQyMCA1MFE0NjIgNTAgNTAyLjUgNjkuNVE1NDMgODkgNTcwIDEyNkw1ODEgMTIwUTUzNyA1MyA0NjAuNSAxNy41UTM4NCAtMTggMjk2IC0xOFExODMgLTE4IDExMi41IDQxLjVRNDIgMTAxIDQyIDE5NFoiLz48Y2lyY2xlIGN4PSI4MDAiIGN5PSIxMzAzIiByPSI3MCIvPjwvZz4KPC9zdmc+Cg==">
+<title>Anny Dias · Portfólio</title>
+<meta name="description" content="Portfólio comercial de Anny Dias, Closer de Mentorias na Tutory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter+Tight:wght@400;500;600&display=swap">
+<style>
+/* Layout: editorial 12-col grid, hairline rules between numbered sections, giant serif display, pill tags. */
+:root{
+  --brown:#593A26; --cream:#FDF5E7; --rose:#A36361;
+  --bg:var(--cream); --fg:var(--brown); --muted:#8A6E5C; --line:rgba(89,58,38,.22);
+  --surface:#F7EBD6; --accent:var(--rose); --on-accent:#FDF5E7;
+  --display:"Fraunces", "Iowan Old Style", Georgia, serif;
+  --text:"Inter Tight", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gutr:max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#24170F; --fg:#FDF5E7; --muted:#C2AD98; --line:rgba(253,245,231,.18);
+  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#24170F; --fg:#FDF5E7; --muted:#C2AD98; --line:rgba(253,245,231,.18);
+  --surface:#2F1F15; --accent:#D08F8C; --on-accent:#24170F; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--text);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1360px;margin:0 auto;padding-left:clamp(16px,4vw,48px);padding-right:clamp(16px,4vw,48px)}
+@supports (padding:max(1px)){.wrap{padding-left:max(clamp(16px,4vw,48px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,48px),env(safe-area-inset-right,0px))}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.logo{display:block;color:var(--fg)}
+.logo svg{display:block;width:100%;height:100%}
+
+/* Top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;letter-spacing:-.01em}
+.brand .logo{width:34px;height:34px}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--fg);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:500;line-height:1.2;white-space:nowrap}
+.pill.fill{background:var(--fg);color:var(--bg)}
+.pill.rose{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.pill .dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+
+/* Hero */
+.hero{padding-block:clamp(40px,8vw,104px) clamp(36px,6vw,72px);border-bottom:1px solid var(--line)}
+.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:500}
+.hero h1{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(76px,17.5vw,272px);line-height:.86;letter-spacing:-.045em;margin:0;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:300}
+.hero h1 .ink{color:var(--accent);margin-left:.07em}
+.hero-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:clamp(28px,4vw,56px);align-items:end}
+.role{grid-column:1 / span 5;font-family:var(--display);font-size:clamp(22px,2.4vw,32px);line-height:1.15;letter-spacing:-.01em;margin:0}
+.lede{grid-column:7 / span 6;font-size:clamp(17px,1.5vw,20px);line-height:1.55;margin:0;max-width:56ch}
+.lede strong{font-weight:600}
+@media (max-width:760px){.role,.lede{grid-column:1 / -1}}
+
+/* Sections */
+.sec{border-bottom:1px solid var(--line);padding-block:clamp(40px,6vw,80px)}
+.sec-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:baseline;margin-bottom:clamp(28px,4vw,48px)}
+.num{grid-column:span 2;font-family:var(--display);font-size:clamp(18px,1.6vw,22px);color:var(--accent)}
+.sec-head h2{grid-column:span 10;font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.035em;margin:0}
+@media (max-width:760px){.num,.sec-head h2{grid-column:1 / -1}.sec-head{gap:8px}}
+
+.period{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-top:1px solid var(--fg);padding-top:14px}
+.period h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;margin:0}
+.period span{color:var(--muted);font-size:14px}
+
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:20px;border-top:1px solid var(--line)}
+.stat{padding:28px 24px 30px 0;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0;transition:background-color .3s ease}
+.stat + .stat{padding-left:24px}
+.stat:last-child{border-right:0}
+.stat .label{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;display:flex;justify-content:space-between;gap:8px}
+.stat .label i{font-style:normal;color:var(--accent)}
+.stat .value{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(56px,6.6vw,104px);line-height:.9;letter-spacing:-.045em;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.stat .value small{font-size:.38em;letter-spacing:-.01em;vertical-align:.95em;margin-right:.08em}
+.stat .value .u{font-size:.42em;letter-spacing:-.01em;margin-left:.08em}
+.stat .desc{font-size:15px;line-height:1.45;margin:0;max-width:28ch}
+.stat .note{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.stat .note b{font-weight:600;color:var(--fg);font-variant-numeric:tabular-nums}
+@media (hover:hover){.stat:hover .value{color:var(--accent)}}
+.stat .value{transition:color .3s ease}
+@media (max-width:1000px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat{padding:24px 16px 26px 0}
+  .stat + .stat{padding-left:0}
+  .stat:nth-child(2n){padding-left:20px;border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media (max-width:520px){
+  .stats{grid-template-columns:1fr}
+  .stat,.stat:nth-child(2n){padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .stat:last-child{border-bottom:0}
+}
+
+/* Experience table */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th{text-align:left;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;padding:0 16px 14px 0;border-bottom:1px solid var(--fg)}
+td{padding:26px 16px 26px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+td.p{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--muted);font-size:15px;width:18%}
+td.c{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);letter-spacing:-.015em;line-height:1.15;width:34%}
+td.e{font-size:17px;font-weight:500;width:18%}
+td.a .tags{gap:6px}
+tbody tr{transition:background-color .25s ease}
+@media (hover:hover){tbody tr:hover{background:var(--surface)}}
+tr.blank td{color:var(--muted)}
+tr.blank td.c{color:var(--line)}
+.c .cell{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+/* Mobile cards for table */
+@media (max-width:640px){
+  table{min-width:0}
+  thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  tbody tr{display:grid;grid-template-columns:1fr;gap:6px;padding:20px 0;border-bottom:1px solid var(--line)}
+  td{display:block;border:0;padding:0;width:auto!important}
+  td.p{font-size:14px}
+  td.a{padding-top:6px}
+  tr.blank td:not(.p){display:none}
+}
+
+/* Footer */
+footer{padding-block:clamp(40px,6vw,72px) clamp(28px,4vw,40px)}
+.foot{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
+.foot .logo{grid-column:span 2;width:clamp(72px,9vw,112px);aspect-ratio:1;max-width:100%}
+details{grid-column:4 / span 9;border-top:1px solid var(--fg);border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-size:clamp(22px,2.4vw,30px);letter-spacing:-.015em}
+summary::-webkit-details-marker{display:none}
+.plus{flex:none;width:36px;height:36px;border:1px solid var(--fg);border-radius:50%;position:relative;transition:transform .35s ease,background-color .25s ease}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--fg);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .25s ease}
+details[open] .plus{transform:rotate(180deg)}
+details[open] .plus::after{opacity:0}
+.method{list-style:none;margin:0;padding:0 0 22px;display:grid;gap:0}
+.method li{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;line-height:1.5}
+.method li span:first-child{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500;padding-top:3px}
+.method li span:last-child{max-width:62ch}
+@media (max-width:760px){.foot .logo,details{grid-column:1 / -1}.method li{grid-template-columns:1fr;gap:4px}}
+.colophon{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:clamp(36px,5vw,56px);font-size:13px;color:var(--muted)}
+
+/* Entrance */
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 .w{display:inline-block;animation:rise .9s cubic-bezier(.2,.7,.1,1) both}
+  .hero h1 .w:nth-child(2){animation-delay:.08s}
+  @keyframes rise{from{transform:translateY(.12em);opacity:.35}to{transform:none;opacity:1}}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Anny Dias, voltar ao início">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><g fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></svg></span>
+      Anny Dias
+    </a>
+    <div class="tags">
+      <span class="pill">Portfólio 2026</span>
+      <span class="pill fill">Closer de Mentorias</span>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <h1><span class="w">Anny</span> <span class="w"><em>Dias</em><span class="ink">.</span></span></h1>
+      <div class="hero-grid">
+        <p class="role">Closer de Mentorias<br>na Tutory</p>
+        <p class="lede">De abril a novembro de 2026, fechei <strong>71 vendas</strong> e <strong>R$&nbsp;446 mil</strong> em pagamentos recebidos. Os mentores que coloquei na plataforma já somam mais de <strong>1.100 alunos</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="resultados" aria-labelledby="t-resultados">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">01</span>
+        <h2 id="t-resultados">Resultados</h2>
+      </div>
+
+      <div class="period">
+        <h3>Abril – Novembro 2026</h3>
+      </div>
+
+      <div class="stats">
+        <article class="stat">
+          <div class="label">Faturamento recebido</div>
+          <div class="value"><small>R$</small>446<span class="u">mil</span></div>
+        </article>
+        <article class="stat">
+          <div class="label">Vendas fechadas</div>
+          <div class="value">71</div>
+        </article>
+        <article class="stat">
+          <div class="label">Alunos na plataforma</div>
+          <div class="value">+1.100</div>
+        </article>
+        <article class="stat">
+          <div class="label">Mentores com até</div>
+          <div class="value">361<span class="u">alunos</span></div>
+          <div class="note">Soma dos 3 maiores mentores: <b>150 + 109 + 102</b></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experiencia" aria-labelledby="t-experiencia">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="num">02</span>
+        <h2 id="t-experiencia">Experiência</h2>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th scope="col">Período</th><th scope="col">Cargo</th><th scope="col">Empresa</th><th scope="col">Áreas</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p">Abr 2026 – atual</td>
+              <td class="c"><div class="cell">Closer de Mentorias <span class="pill rose"><span class="dot"></span>Atual</span></div></td>
+              <td class="e">Tutory</td>
+              <td class="a"><div class="tags"><span class="pill">Vendas</span><span class="pill">Mentorias</span></div></td>
+            </tr>
+            <!-- EXPERIÊNCIA ANTERIOR 1: troque os "—" pelo período, cargo, empresa e áreas. Para cada área, use <span class="pill">Área</span>. Depois remova class="blank". -->
+            <tr class="blank">
+              <td class="p">—</td>
+              <td class="c">—</td>
+              <td class="e">—</td>
+              <td class="a">—</td>
+            </tr>
+            <!-- EXPERIÊNCIA ANTERIOR 2 -->
+            <tr class="blank">
+              <td class="p">—</td>
+              <td class="c">—</td>
+              <td class="e">—</td>
+              <td class="a">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><g fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></svg></span>
+
+      <details id="metodo">
+        <summary>Como os números foram calculados <span class="plus" aria-hidden="true"></span></summary>
+        <ul class="method">
+          <li><span>Faturamento</span><span>Valor pago entre abril e novembro de 2026, sem parcelas pendentes nem estornos.</span></li>
+          <li><span>Valores em R$</span><span>Arredondados para cima.</span></li>
+          <li><span>Alunos</span><span>Arredondados para baixo, na centena (total real: 1.104).</span></li>
+          <li><span>Privacidade</span><span>Nomes de clientes não aparecem neste portfólio.</span></li>
+        </ul>
+      </details>
+    </div>
+    <div class="colophon">
+      <span>Anny Dias · Closer de Mentorias</span>
+      <span>Portfólio 2026</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

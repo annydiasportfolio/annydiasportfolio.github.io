@@ -281,6 +281,43 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
   .hero h1 .w:nth-child(2){animation-delay:.08s}
   @keyframes rise{from{transform:translateY(.12em);opacity:.35}to{transform:none;opacity:1}}
 }
+
+/* Mobile layout refinements */
+.swipe-hint{display:none}
+@media (max-width:760px){
+  .hero{padding-block:20px 28px}
+  .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);grid-template-areas:"name name" "role photo";gap:18px 16px;align-items:end}
+  .hero h1{font-size:clamp(64px,21vw,120px)}
+  .portrait{aspect-ratio:3/4;height:auto;max-height:none;border-radius:999px 999px 0 0}
+  .role.headline{flex-direction:column;gap:9px;font-size:15.5px;line-height:1.25}
+  .role.headline span{white-space:normal;display:flex;gap:8px}
+  .role.headline span::before{content:"";flex:none;width:10px;height:1px;background:var(--accent);margin-top:.62em}
+  .role.headline span:not(:last-child)::after{content:none}
+
+  .sec{padding-block:40px}
+  .sec-head{margin-bottom:24px}
+  .period h3{font-size:22px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat,.stat:nth-child(2n){padding:20px 12px 22px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);gap:10px}
+  .stat:nth-child(2n){padding-left:14px;border-right:0}
+  .stat:nth-child(n+3){border-bottom:0}
+  .stat .label{font-size:11px;letter-spacing:.08em}
+  .stat .value{font-size:clamp(40px,12.5vw,56px)}
+
+  .about .quote{font-size:23px}
+  .pillars{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-16px;margin-right:-16px;padding:0 16px 6px;scroll-padding-left:16px;scrollbar-width:none}
+  .pillars::-webkit-scrollbar{display:none}
+  .pillar{flex:0 0 76%;scroll-snap-align:start}
+  .duo{aspect-ratio:4/5}
+  .swipe-hint{display:block;margin:12px 0 0;font-size:13px;color:var(--muted)}
+
+  .g-axis,.g-row{grid-template-columns:minmax(72px,104px) minmax(0,1fr);gap:10px}
+  .g-row .who{font-size:14px}
+
+  .build{gap:24px}
+  .build-mark{max-width:220px}
+  .build-title{font-size:38px}
+}
 </style>
 </head>
 <body>
@@ -401,6 +438,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
           <p>Da sala de aula à coordenação, com a experiência do aluno e do mentor no centro.</p>
         </article>
       </div>
+      <p class="swipe-hint">Deslize para ver as 4 áreas →</p>
     </div>
   </section>
 

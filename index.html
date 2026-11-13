@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDE2MDAiIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjE2MDAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTG9nbyBBbm55IERpYXMiPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSIxNjAwIiBmaWxsPSIjRkRGNUU3Ii8+PGcgZmlsbD0iIzU5M0EyNiI+PHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzM0IDExMjUpIHNjYWxlKDEgLTEpIiBkPSJNNTU5IDkzVjEwMkw1NDggOTJWNzM2UTU0OCA4MDggNTE4LjAgODQ2LjBRNDg4IDg4NCA0MzIgODg0UTM3MCA4ODQgMzM5LjAgODUzLjBRMzA4IDgyMiAzMDggNzgyVjcwMVEzMDggNjUxIDI3My4wIDYxNy4wUTIzOCA1ODMgMTgyIDU4M1ExNDMgNTgzIDExNy41IDYwNi41UTkyIDYzMCA5MiA2NzhROTIgNzMxIDEzNC4wIDc4MS41UTE3NiA4MzIgMjU4LjUgODY1LjBRMzQxIDg5OCA0NjEgODk4UTYyNSA4OTggNzA2LjUgODI5LjVRNzg4IDc2MSA3ODggNjM1VjExNlE3ODggODEgODAwLjAgNjUuNVE4MTIgNTAgODMwIDUwUTg0OCA1MCA4NjIuMCA2MS4wUTg3NiA3MiA4ODAgOThRODgwIDEwMSA4ODEuNSAxMDIuNVE4ODMgMTA0IDg4NSAxMDRRODg3IDEwNCA4ODguNSAxMDIuNVE4OTAgMTAxIDg5MCA5OFE4OTAgNzkgODcyLjUgNTIuMFE4NTUgMjUgODE2LjAgMy41UTc3NyAtMTggNzEyIC0xOFE2MzIgLTE4IDU5NS41IDEzLjBRNTU5IDQ0IDU1OSA5M1pNNDIgMTk0UTQyIDMwMyAxMzIuMCAzNjkuNVEyMjIgNDM2IDQxOCA0MzZRNDc5IDQzNiA1MTguNSA0MjMuNVE1NTggNDExIDU5MiAzOTNMNTg0IDM4NlE1NTAgNDAyIDUxNS4wIDQxMS4wUTQ4MCA0MjAgNDM2IDQyMFEzNjEgNDIwIDMyMC41IDM3MC4wUTI4MCAzMjAgMjgwIDIyOVEyODAgMTQxIDMxOS4wIDk1LjVRMzU4IDUwIDQyMCA1MFE0NjIgNTAgNTAyLjUgNjkuNVE1NDMgODkgNTcwIDEyNkw1ODEgMTIwUTUzNyA1MyA0NjAuNSAxNy41UTM4NCAtMTggMjk2IC0xOFExODMgLTE4IDExMi41IDQxLjVRNDIgMTAxIDQyIDE5NFoiLz48Y2lyY2xlIGN4PSI4MDAiIGN5PSIxMzAzIiByPSI3MCIvPjwvZz4KPC9zdmc+Cg==">
 <title>Anny Dias · Portfólio</title>
-<meta name="description" content="Portfólio de Anny Dias, Closer Sênior High Ticket de Vendas Consultivas.">
+<meta name="description" content="Portfólio de Anny Dias, Closer e Head de Mentorias Sênior.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..500&family=Inter+Tight:wght@400;500;600&display=swap">
@@ -83,6 +83,14 @@ nav a.on{background:var(--fg);color:var(--bg)}
 .sec-head h2{grid-column:span 10;font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.035em;margin:0}
 @media (max-width:760px){.num,.sec-head h2{grid-column:1 / -1}.sec-head{gap:8px}}
 
+.role.headline{display:flex;flex-wrap:wrap;gap:4px 0;font-size:clamp(20px,2.1vw,28px);line-height:1.25}
+.role.headline span{white-space:nowrap}
+.role.headline span:not(:last-child)::after{content:"|";color:var(--accent);margin:0 .45em;font-weight:300}
+@media (max-width:520px){.role.headline span{white-space:normal}}
+.about-text{grid-column:1 / span 7;display:flex;flex-direction:column;gap:28px;min-width:0}
+.about-body{display:flex;flex-direction:column;gap:14px;max-width:62ch}
+.about-body p{margin:0;font-size:17px;line-height:1.65}
+@media (max-width:860px){.about-text{grid-column:1 / -1}}
 /* Results */
 .period{border-top:1px solid var(--fg);padding-top:14px}
 .period h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;margin:0}
@@ -109,13 +117,13 @@ nav a.on{background:var(--fg);color:var(--bg)}
 
 /* About */
 .about{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
-.about .quote{grid-column:1 / span 7;font-family:var(--display);font-weight:350;font-size:clamp(24px,2.6vw,36px);line-height:1.22;letter-spacing:-.015em;margin:0;text-wrap:pretty}
+.about .quote{font-family:var(--display);font-weight:350;font-size:clamp(24px,2.6vw,36px);line-height:1.22;letter-spacing:-.015em;margin:0;text-wrap:pretty}
 .about .quote em{color:var(--accent);font-style:italic}
 .facts{grid-column:9 / span 4;margin:0;display:grid;align-content:start;border-top:1px solid var(--fg)}
 .facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
 .facts dt{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500}
 .facts dd{margin:0;font-weight:500;text-align:right}
-@media (max-width:860px){.about .quote,.facts{grid-column:1 / -1}}
+@media (max-width:860px){.facts{grid-column:1 / -1}}
 
 .pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px);margin-top:clamp(40px,5vw,72px)}
 .pillar{display:flex;flex-direction:column;gap:14px;min-width:0;cursor:default}
@@ -237,7 +245,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
     </nav>
     <div class="tags">
       <span class="pill">Portfólio 2026</span>
-      <span class="pill fill">Closer Sênior High Ticket</span>
+      <span class="pill fill">Closer e Head de Mentorias Sênior</span>
     </div>
   </div>
 </header>
@@ -248,11 +256,9 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
       <h1><span class="w">Anny</span> <span class="w"><em>Dias</em><span class="ink">.</span></span></h1>
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="role">Closer Sênior High Ticket de Vendas Consultivas</p>
+          <p class="role headline"><span>PSM II</span><span>Green Belt Lean Six Sigma</span><span>Closer e Head de Mentorias Sênior</span><span>Especialista Educacional Bilíngue</span><span>Gestão de Pessoas e Projetos</span><span>Customer Experience and Success</span></p>
           <p class="lede">De abril a novembro de 2026, fechei <strong>71 vendas</strong> e <strong>R$&nbsp;446 mil</strong> em pagamentos recebidos. Os mentores que coloquei na plataforma já somam mais de <strong>1.100 alunos</strong>.</p>
           <div class="tags">
-            <span class="pill soft">PSM II · Scrum.org</span>
-            <span class="pill soft">Lean Six Sigma Green Belt</span>
             <span class="pill soft">Inglês fluente</span>
             <span class="pill soft">Brasília – DF</span>
           </div>
@@ -295,7 +301,14 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
     <div class="wrap">
       <div class="sec-head"><span class="num">02</span><h2 id="t-sobre">Sobre</h2></div>
       <div class="about">
-        <p class="quote">Na Tutory, atuo na linha de frente do maior ecossistema educacional do Brasil, <em>transformando o conhecimento de especialistas em negócios de escala</em>. Trago a experiência de gestão geral e comercial em grandes unidades de ensino, como o CNA.</p>
+        <div class="about-text">
+          <p class="quote">Como Head de Mentorias na Tutory, atuo na linha de frente do maior ecossistema educacional do Brasil, <em>transformando o conhecimento de especialistas em negócios de escala</em>, com metodologias de alto impacto e de forma personalizada.</p>
+          <div class="about-body">
+            <p>Com uma trajetória consolidada na gestão geral e comercial de grandes unidades educacionais como o CNA, minha expertise une a liderança de equipes de alta performance à otimização de processos focada em crescimento sustentável.</p>
+            <p>Sou especialista em gestão ágil e melhoria contínua. Uso minhas certificações PSM II (Scrum.org) e Lean Six Sigma Green Belt para garantir entregas estratégicas, análise precisa de KPIs e máxima eficiência operacional.</p>
+            <p>Meu foco é impulsionar o sucesso do mentor e elevar o padrão do mercado educacional.</p>
+          </div>
+        </div>
         <dl class="facts">
           <div><dt>Experiência</dt><dd>6+ anos em educação</dd></div>
           <div><dt>Empresas</dt><dd>3</dd></div>
@@ -436,7 +449,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
       </div>
     </div>
     <div class="colophon">
-      <span>Anny Dias · Closer Sênior High Ticket de Vendas Consultivas</span>
+      <span>Anny Dias · Closer e Head de Mentorias Sênior</span>
       <span>Fotos ilustrativas: Unsplash</span>
     </div>
   </div>

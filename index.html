@@ -234,6 +234,34 @@ details[open] > summary .plus::after{opacity:0}
 .skills .pill{font-size:15px;padding:8px 16px;white-space:normal}
 @media (max-width:760px){.edu{grid-template-columns:1fr}}
 
+/* Projects (under construction) */
+.build{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:center}
+.build-mark{aspect-ratio:1;max-width:100%;background:var(--surface);border-radius:999px 999px 4px 4px;display:grid;place-items:center;color:var(--fg);position:relative;overflow:hidden;
+  background-image:repeating-linear-gradient(-45deg,transparent 0 14px,var(--line) 14px 15px)}
+.build-mark svg{width:58%;height:58%;overflow:visible}
+.build-mark .bdot{fill:var(--accent);transform-box:fill-box;transform-origin:center}
+.build-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px;min-width:0}
+.build-title{font-family:var(--display);font-weight:400;font-variation-settings:"opsz" 144;font-size:clamp(36px,4.6vw,68px);line-height:1;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.build-title em{font-style:italic;font-weight:300;color:var(--accent)}
+.build-text{margin:0;font-size:17px;line-height:1.6;color:var(--muted);max-width:52ch}
+.build-list{list-style:none;margin:8px 0 0;padding:0;width:100%;border-top:1px solid var(--fg)}
+.build-list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.build-list .bn{font-family:var(--display);color:var(--accent);font-size:18px}
+.build-list .bl{height:10px;border-radius:999px;background:var(--surface);overflow:hidden;position:relative}
+.build-list li:nth-child(1) .bl{width:72%}.build-list li:nth-child(2) .bl{width:54%}.build-list li:nth-child(3) .bl{width:38%}
+.build-list .bl::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--line),transparent);transform:translateX(-100%)}
+.build-list .bs{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:500}
+@media (max-width:760px){.build{grid-template-columns:1fr}.build-mark{max-width:320px;width:100%}}
+@media (prefers-reduced-motion:no-preference){
+  .build-mark .bdot{animation:hop 1.8s cubic-bezier(.3,0,.3,1) infinite}
+  @keyframes hop{0%,100%{transform:translateY(0) scale(1)}35%,50%{transform:translateY(-45px) scale(.95)}80%{transform:translateY(12px) scale(1.18,.82)}}
+  .build-list .bl::after{animation:shimmer 2.2s ease-in-out infinite}
+  .build-list li:nth-child(2) .bl::after{animation-delay:.3s}.build-list li:nth-child(3) .bl::after{animation-delay:.6s}
+  @keyframes shimmer{to{transform:translateX(100%)}}
+  .pill .dot.pulse{animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.25}}
+}
+
 /* Footer */
 footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
 .cta{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
@@ -257,7 +285,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="mark" fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></defs></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="mark" fill="currentColor"><path id="mark-a" transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></defs></svg>
 
 <header class="top">
   <div class="wrap">
@@ -269,6 +297,7 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
       <a href="#sobre">Sobre</a>
       <a href="#trajetoria">Trajetória</a>
       <a href="#formacao">Formação</a>
+      <a href="#projetos">Projetos</a>
     </nav>
     <div class="top-right">
     <div class="tags">
@@ -466,6 +495,26 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
           <span class="pill">Formação de professores</span>
           <span class="pill">Ensino de idiomas</span>
           <span class="pill">Inglês (ESL)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" id="projetos" aria-labelledby="t-projetos">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">05</span><h2 id="t-projetos">Projetos</h2></div>
+      <div class="build">
+        <div class="build-mark" aria-hidden="true">
+          <svg viewBox="0 0 1600 1600"><use href="#mark-a" fill="currentColor"/><circle class="bdot" cx="800" cy="1303" r="70"/></svg>
+        </div>
+        <div class="build-copy">
+          <span class="pill rose"><span class="dot pulse"></span>Em construção</span>
+          <p class="build-title">Novos projetos <em>chegando em breve.</em></p>
+          <p class="build-text">Esta área vai reunir cases e projetos que desenvolvi. Enquanto isso, fale comigo pelo LinkedIn.</p>
+          <ol class="build-list">
+            <li><span class="bn">01</span><span class="bl"></span><span class="bs">Em breve</span></li>
+            <li><span class="bn">02</span><span class="bl"></span><span class="bs">Em breve</span></li>
+            <li><span class="bn">03</span><span class="bl"></span><span class="bs">Em breve</span></li>
+          </ol>
         </div>
       </div>
     </div>

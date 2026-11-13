@@ -128,7 +128,7 @@ tr.blank td.c{color:var(--line)}
 /* Footer */
 footer{padding-block:clamp(40px,6vw,72px) clamp(28px,4vw,40px)}
 .foot{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
-.foot .logo{grid-column:span 2;width:clamp(72px,9vw,112px);aspect-ratio:1;max-width:100%}
+.foot .logo{grid-column:1 / -1;width:clamp(72px,9vw,112px);aspect-ratio:1;max-width:100%}
 details{grid-column:4 / span 9;border-top:1px solid var(--fg);border-bottom:1px solid var(--line)}
 summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-size:clamp(22px,2.4vw,30px);letter-spacing:-.015em}
 summary::-webkit-details-marker{display:none}
@@ -205,7 +205,6 @@ details[open] .plus::after{opacity:0}
         <article class="stat">
           <div class="label">Mentores com até</div>
           <div class="value">361<span class="u">alunos</span></div>
-          <div class="note">Soma dos 3 maiores mentores: <b>150 + 109 + 102</b></div>
         </article>
       </div>
     </div>
@@ -255,16 +254,6 @@ details[open] .plus::after{opacity:0}
   <div class="wrap">
     <div class="foot">
       <span class="logo" aria-hidden="true"><svg viewBox="0 0 1600 1600"><g fill="currentColor"><path transform="translate(334 1125) scale(1 -1)" d="M559 93V102L548 92V736Q548 808 518.0 846.0Q488 884 432 884Q370 884 339.0 853.0Q308 822 308 782V701Q308 651 273.0 617.0Q238 583 182 583Q143 583 117.5 606.5Q92 630 92 678Q92 731 134.0 781.5Q176 832 258.5 865.0Q341 898 461 898Q625 898 706.5 829.5Q788 761 788 635V116Q788 81 800.0 65.5Q812 50 830 50Q848 50 862.0 61.0Q876 72 880 98Q880 101 881.5 102.5Q883 104 885 104Q887 104 888.5 102.5Q890 101 890 98Q890 79 872.5 52.0Q855 25 816.0 3.5Q777 -18 712 -18Q632 -18 595.5 13.0Q559 44 559 93ZM42 194Q42 303 132.0 369.5Q222 436 418 436Q479 436 518.5 423.5Q558 411 592 393L584 386Q550 402 515.0 411.0Q480 420 436 420Q361 420 320.5 370.0Q280 320 280 229Q280 141 319.0 95.5Q358 50 420 50Q462 50 502.5 69.5Q543 89 570 126L581 120Q537 53 460.5 17.5Q384 -18 296 -18Q183 -18 112.5 41.5Q42 101 42 194Z"/><circle cx="800" cy="1303" r="70"/></g></svg></span>
-
-      <details id="metodo">
-        <summary>Como os números foram calculados <span class="plus" aria-hidden="true"></span></summary>
-        <ul class="method">
-          <li><span>Faturamento</span><span>Valor pago entre abril e novembro de 2026, sem parcelas pendentes nem estornos.</span></li>
-          <li><span>Valores em R$</span><span>Arredondados para cima.</span></li>
-          <li><span>Alunos</span><span>Arredondados para baixo, na centena (total real: 1.104).</span></li>
-          <li><span>Privacidade</span><span>Nomes de clientes não aparecem neste portfólio.</span></li>
-        </ul>
-      </details>
     </div>
     <div class="colophon">
       <span>Anny Dias · Closer de Mentorias</span>

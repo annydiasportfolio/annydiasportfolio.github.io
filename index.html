@@ -340,7 +340,6 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
 /* Header follows scroll */
 .top{transition:transform .4s cubic-bezier(.2,.7,.1,1)}
 .top::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p,0))}
-@media (max-width:760px){.top.hide{transform:translateY(calc(-100% - 2px))}}
 @media (prefers-reduced-motion:reduce){.top{transition:none}}
 </style>
 </head>
@@ -625,18 +624,15 @@ footer{padding-block:clamp(48px,7vw,96px) clamp(28px,4vw,40px)}
     });},{threshold:[0,.35]});
     targets.forEach(function(t){io.observe(t);});
   }
-  // header: progress line, hide on scroll down / show on scroll up (phone), keep active link in view
+  // header: progress line and active link kept in view (header stays fixed)
   var top=document.querySelector('.top'), nav=document.querySelector('nav'), last=scrollY, ticking=false, small=matchMedia('(max-width:760px)');
   function upd(){
     var y=scrollY, max=document.documentElement.scrollHeight-innerHeight;
     top.style.setProperty('--p',max>0?Math.min(1,y/max).toFixed(4):0);
-    if(small.matches){ if(y>last+6&&y>120)top.classList.add('hide'); else if(y<last-6||y<120)top.classList.remove('hide'); }
-    else top.classList.remove('hide');
     last=y; ticking=false;
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
   upd();
-  nav.addEventListener('click',function(){setTimeout(function(){top.classList.remove('hide');},50);});
   if('MutationObserver' in window){
     new MutationObserver(function(){var a=nav.querySelector('a.on');if(!a)return;
       nav.scrollTo({left:a.offsetLeft-(nav.clientWidth-a.offsetWidth)/2,behavior:anim?'smooth':'auto'});
